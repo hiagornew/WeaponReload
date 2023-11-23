@@ -1,0 +1,36 @@
+# Ignorar arquivos e pastas gerados automaticamente pelo Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+
+# Ignorar arquivos de compilação gerados pelo Unity
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+
+# Ignorar arquivos de cache e logs gerados pelo Unity
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/AssetStoreTools*
+/Assets/Plugins/Editor/JetBrains*
+/[Ll]ogs/
+/[Uu]nityGenerated/
+/[Uu]nityPackageManager/
+
+# Ignorar arquivos específicos de IDE ou sistema operacional
+/[Dd]ocs/
+/[Ii]mport/
+/[Ss]treamingAssets/
+/[Ww]eb/[Pp]layers/
+/[Ss]tandard[Ss]cripts/
+/ProjectSettings/ProjectVersion.txt
+/.vs/
