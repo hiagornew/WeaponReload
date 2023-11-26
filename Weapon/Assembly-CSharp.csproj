@@ -53,6 +53,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\commontypes.zh-Hans.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\mergetool.es.txt" />
      <Folder Include="Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator" />
+     <Folder Include="Assets\Weapons\G17\Textures\skin_desert" />
      <None Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\package.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\basecommands.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\cm.es.txt" />
@@ -84,12 +85,16 @@
      <None Include="Library\PackageCache\com.unity.timeline@1.6.4\ValidationExceptions.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\package.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\xdiff.zh-Hans.txt" />
+     <Folder Include="Assets\Weapons\G17\Materials" />
+     <Folder Include="Assets\Weapons" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\xdiff.ko.txt" />
      <Folder Include="Library\PackageCache\com.unity.timeline@1.6.4" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\clientcommon.ja.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\basecommands.zh-Hans.txt" />
+     <Folder Include="Assets\Weapons\G17\Textures\skin_heat" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\PackageConversionData.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\guihelp.en.txt" />
+     <Folder Include="Assets\Weapons\M16 pack\Prefabs" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\differences.ja.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\configurehelper.ja.txt" />
@@ -97,6 +102,7 @@
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.17\package.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\workspaceserver.ko.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\plastic-gui.zh-Hans.txt" />
+     <Folder Include="Assets\Weapons\M16 pack\Meshes" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\ValidationExceptions.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\cm.en.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\commontypes.en.txt" />
@@ -129,7 +135,9 @@
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.17\ValidationExceptions.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\cm-help.zh-Hant.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\clientcommon.zh-Hant.txt" />
+     <Folder Include="Assets\Weapons\M16 pack\Textures" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\xdiff.zh-Hant.txt" />
+     <Folder Include="Assets\Weapons\G17" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Textures" />
      <Folder Include="Library\PackageCache\com.unity.editorcoroutines@1.0.0" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\i3.zh-Hant.txt" />
@@ -142,6 +150,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\cm-help.ja.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\clientcommon.en.txt" />
      <Folder Include="Library\PackageCache\com.unity.collab-proxy@2.0.1" />
+     <Folder Include="Assets\Weapons\M16 pack\Meshes\Materials" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\binmergetool.zh-Hans.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\i3.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\mergetool.zh-Hans.txt" />
@@ -154,14 +163,18 @@
      <None Include="Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\package.json" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6" />
      <Folder Include="Library\PackageCache\com.unity.ide.rider@3.0.18" />
+     <Folder Include="Assets\Weapons\G17\Textures\skin_snowCamo" />
+     <Folder Include="Assets\Weapons\M16 pack" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\binmergetool.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\cm.ja.txt" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders\TMP_SDF_SSD.cginc" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\ValidationConfig.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\images.ja.txt" />
      <Folder Include="Library\PackageCache\com.unity.ide.vscode@1.2.5" />
+     <Folder Include="Assets\Weapons\G17\Textures" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Tests" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders\TMP_Properties.cginc" />
+     <Folder Include="Assets\Weapons\M16 pack\Materials" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Shaders\TMP_SDF Internal Editor.shader" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\xdiff.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\configurehelper.zh-Hans.txt" />
@@ -175,6 +188,7 @@
      <Folder Include="Library\PackageCache\com.unity.settings-manager@1.0.3\Content" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\commontypes.ko.txt" />
      <Folder Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.17" />
+     <Folder Include="Assets\Weapons\G17\Textures\skin_tox1c" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\commontypes.ja.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\configurehelper.ko.txt" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\PackageConversionData_Assets.json" />
@@ -191,6 +205,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\i3.ja.txt" />
      <Folder Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\cm.zh-Hans.txt" />
+     <Folder Include="Assets\Weapons\G17\Textures\arms" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\plastic-gui.ja.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\i3.en.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\workspaceserver.zh-Hant.txt" />
@@ -201,6 +216,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\i3.ko.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\localization\guihelp.ko.txt" />
      <None Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\package.json" />
+     <None Include="Assets\Weapons\G17\G17_info.txt" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Softwares\Unity\2021.3.20f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
