@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR.InteractionSystem;
 using MyBox;
 
 [SelectionBase]
@@ -19,13 +18,11 @@ public class SlideBehaviour : MonoBehaviour
     [SerializeField] private GunInformation gunInformation;
     [ReadOnly]
     [SerializeField] private Animator gunAnimator;
-    [ReadOnly]
-    [SerializeField] private LinearMapping linearMapping;
     [SerializeField] private Transform ejectPoint;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private GameObject casingPrefab;
-    [SerializeField] private PlaySound slidePullSound;
-    [SerializeField] private PlaySound slideReturnSound;
+    // [SerializeField] private PlaySound slidePullSound;
+    // [SerializeField] private PlaySound slideReturnSound;
 
     [Foldout("Information", true)]
     [ReadOnly]
@@ -46,92 +43,87 @@ public class SlideBehaviour : MonoBehaviour
             gunAnimator = GetComponentInParent<Animator>();
         }
 
-        if (!linearMapping)
-        {
-            linearMapping = GetComponent<LinearMapping>();
-        }
-
         if (!gunInformation)
         {
             gunInformation = GetComponentInParent<GunInformation>();
         }
     }
 
-    private void OnAttachedToHand(Hand hand)
-    {
-        isLocked = false;
-        gunAnimator.speed = 1;
-        gunAnimator.SetBool(IsInteractingWithSlide, true);
-        SetSlideClosed(false);
-        StopAllCoroutines();
-    }
-
-    private void HandAttachedUpdate(Hand hand)
-    {
-        UpdateNormalizedTimes();
-
-        if(linearMapping.value >= fullyOpenSlideThreshold && !isFullyOpen)
-        {
-            isFullyOpen = true;
-
-            if(slidePullSound != null)
-            {
-                slidePullSound.PlayOneShotSound();
-            }
-            if (gunInformation.hasBulletInChamber)
-            {
-                EjectBullet();
-            }
-        }
-        else if(linearMapping.value < fullyOpenSlideThreshold && isFullyOpen)
-        {
-            if (slideReturnSound != null)
-            {
-                slideReturnSound.PlayOneShotSound();
-            }
-
-            if (gunInformation.HasBulletsInMagazine())
-            {
-                gunInformation.LoadBulletInChamber();
-            }
-            isFullyOpen = false;
-        }
-    }
-
-    private void OnDetachedFromHand(Hand hand)
-    {
-        gunAnimator.SetBool(IsInteractingWithSlide, false);
-        StartCoroutine(ReturnLinearMappingToZero());
-    }
-
-    private IEnumerator ReturnLinearMappingToZero()
-    {
-        while(linearMapping.value > 0)
-        {
-            linearMapping.value -= Time.deltaTime / timeToCloseSlide;
-            yield return null;
-            UpdateNormalizedTimes();
-
-            if (linearMapping.value < fullyOpenSlideThreshold && isFullyOpen)
-            {
-                if (slideReturnSound != null)
-                {
-                    slideReturnSound.PlayOneShotSound();
-                }
-
-                if (gunInformation.HasBulletsInMagazine())
-                {
-                    gunInformation.LoadBulletInChamber();
-                }
-                isFullyOpen = false;
-            }
-
-        }
-
-        linearMapping.value = 0;
-        UpdateNormalizedTimes();
-        SetSlideClosed(true);
-    }
+    // private void OnAttachedToHand(Hand hand)
+    // {
+    //     isLocked = false;
+    //     gunAnimator.speed = 1;
+    //     gunAnimator.SetBool(IsInteractingWithSlide, true);
+    //     SetSlideClosed(false);
+    //     StopAllCoroutines();
+    // }
+    //
+    // private void HandAttachedUpdate(Hand hand)
+    // {
+    //     UpdateNormalizedTimes();
+    //
+    //     if(linearMapping.value >= fullyOpenSlideThreshold && !isFullyOpen)
+    //     {
+    //         isFullyOpen = true;
+    //
+    //         if(slidePullSound != null)
+    //         {
+    //             slidePullSound.PlayOneShotSound();
+    //         }
+    //         if (gunInformation.hasBulletInChamber)
+    //         {
+    //             EjectBullet();
+    //         }
+    //     }
+    //     else if(linearMapping.value < fullyOpenSlideThreshold && isFullyOpen)
+    //     {
+    //         if (slideReturnSound != null)
+    //         {
+    //             slideReturnSound.PlayOneShotSound();
+    //         }
+    //
+    //         if (gunInformation.HasBulletsInMagazine())
+    //         {
+    //             gunInformation.LoadBulletInChamber();
+    //         }
+    //         isFullyOpen = false;
+    //     }
+    // }
+    //
+    // private void OnDetachedFromHand(Hand hand)
+    // {
+    //     gunAnimator.SetBool(IsInteractingWithSlide, false);
+    //     StartCoroutine(ReturnLinearMappingToZero());
+    // }
+    //
+    // private IEnumerator ReturnLinearMappingToZero()
+    // {
+    //     while(linearMapping.value > 0)
+    //     {
+    //         linearMapping.value -= Time.deltaTime / timeToCloseSlide;
+    //         yield return null;
+    //         UpdateNormalizedTimes();
+    //
+    //         if (linearMapping.value < fullyOpenSlideThreshold && isFullyOpen)
+    //         {
+    //             if (slideReturnSound != null)
+    //             {
+    //                 slideReturnSound.PlayOneShotSound();
+    //             }
+    //
+    //             if (gunInformation.HasBulletsInMagazine())
+    //             {
+    //                 gunInformation.LoadBulletInChamber();
+    //             }
+    //             isFullyOpen = false;
+    //         }
+    //
+    //     }
+    //
+    //     linearMapping.value = 0;
+    //     UpdateNormalizedTimes();
+    //     SetSlideClosed(true);
+    // }
 
     private void SetSlideClosed(bool value)
     {
@@ -139,11 +131,11 @@ public class SlideBehaviour : MonoBehaviour
         gunInformation.isSlideClosed = value;
     }
 
-    private void UpdateNormalizedTimes()
-    {
-        gunAnimator.SetFloat(NormalizedSlideTime, linearMapping.value);
-        gunAnimator.SetFloat(NormalizedReturnTime, 1 - linearMapping.value);
-    }
+    // private void UpdateNormalizedTimes()
+    // {
+    //     gunAnimator.SetFloat(NormalizedSlideTime, linearMapping.value);
+    //     gunAnimator.SetFloat(NormalizedReturnTime, 1 - linearMapping.value);
+    // }
 
     public void OpenSlideAndLock()
     {
@@ -152,13 +144,13 @@ public class SlideBehaviour : MonoBehaviour
 
         isLocked = true;
         isFullyOpen = true;
-        if (openSlideAfterLastBullet)
-        {
-            linearMapping.value = fullyOpenSlideThreshold;
-            UpdateNormalizedTimes();
-            gunAnimator.speed = 0;
-            gunAnimator.Play(PullBackSlide, 0, linearMapping.value); 
-        }
+        // if (openSlideAfterLastBullet)
+        // {
+        //     linearMapping.value = fullyOpenSlideThreshold;
+        //     UpdateNormalizedTimes();
+        //     gunAnimator.speed = 0;
+        //     gunAnimator.Play(PullBackSlide, 0, linearMapping.value); 
+        // }
     }
 
     public void ReleaseLock()
@@ -179,7 +171,7 @@ public class SlideBehaviour : MonoBehaviour
             }
         }
 
-        StartCoroutine(ReturnLinearMappingToZero());
+        // StartCoroutine(ReturnLinearMappingToZero());
     }
 
     public void EjectCasing()

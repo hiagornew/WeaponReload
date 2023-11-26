@@ -143,7 +143,7 @@ public class PoolingSystem : MonoBehaviour
                 break;
         }
 
-        newObject.ResetObject();
+        // newObject.ResetObject();
         newObject.Initialize(newPosition, newRotation, newParent, useLocalPosition);
         newObject.gameObject.SetActive(false);
         newObject.gameObject.SetActive(true);
@@ -228,7 +228,7 @@ public class PoolingSystem : MonoBehaviour
                 break;
         }
 
-        newObject.ResetObject();
+        // newObject.ResetObject();
         newObject.Initialize(newPosition, newRotation, newParent, useLocalPosition);
         newObject.gameObject.SetActive(false);
         newObject.gameObject.SetActive(true);

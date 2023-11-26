@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using MyBox;
 using UnityEngine;
-using Valve.VR.InteractionSystem;
 using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -18,7 +17,7 @@ public class BulletBehaviour : MonoBehaviour
 
     [Foldout("References", true)]
     public new Rigidbody rigidbody;
-    [SerializeField] private PlaySound impactSound;
+    // [SerializeField] private PlaySound impactSound;
 
     [HideInInspector]
     public BulletImpactController bulletImpactController;
@@ -82,7 +81,7 @@ public class BulletBehaviour : MonoBehaviour
                     impact.hideFlags = HideFlags.HideInHierarchy;
                 }
 
-                impactSound.PlayOneShotSound();
+                // impactSound.PlayOneShotSound();
                 break;
             default:
 

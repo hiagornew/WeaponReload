@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/Foxtrot.unity
     guid: 5190be43bb0c8444c911d7ad81043ac6
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: c39f0e08b7bcd6f419986467320dff57,
+      type: 2}

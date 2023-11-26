@@ -1,0 +1,13 @@
+{
+	"name": "DOTweenPro.EditorScripts",
+	"references": [
+		"DOTween.Modules",
+		"DOTweenPro.Scripts",
+		"UnityEditor.UI",
+		"UnityEngine.UI"
+	],
+	"includePlatforms": [
+		"Editor"
+	],
+	"autoReferenced": false
+}

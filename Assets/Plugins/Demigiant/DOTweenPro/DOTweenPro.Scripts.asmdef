@@ -1,0 +1,8 @@
+{
+	"name": "DOTweenPro.Scripts",
+	"references": [
+		"DOTween.Modules",
+		"UnityEditor.UI",
+		"UnityEngine.UI"
+	]
+}
