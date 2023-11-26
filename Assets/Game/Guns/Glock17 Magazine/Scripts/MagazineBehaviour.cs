@@ -62,7 +62,7 @@ public class MagazineBehaviour : CustomLinearDrive
             return;
         }
         
-        if (linearMapping.value < 0.5f)
+        if (LinearMapping.value < 0.5f)
         {
             EjectFromGun();
         }
@@ -104,11 +104,11 @@ public class MagazineBehaviour : CustomLinearDrive
         grabbableTransform.position = startTransform.position;
         grabbableTransform.rotation = startTransform.rotation;
 
-        initialMappingOffset = linearMapping.value;
+        initialMappingOffset = LinearMapping.value;
         UpdateLinearMapping(grabbableTransform);
         UpdateHandPoser();
 
-        initialMappingOffset = linearMapping.value - CalculateLinearMapping(grabbableObject.holdingHands[0].transform);
+        initialMappingOffset = LinearMapping.value - CalculateLinearMapping(grabbableObject.holdingHands[0].transform);
 
         path = true;
     }
@@ -117,7 +117,7 @@ public class MagazineBehaviour : CustomLinearDrive
     {
         path = false;
 
-        linearMapping.value = 1;
+        LinearMapping.value = 1;
         
         var grabbableTransform = hostTransform;
         grabbableTransform.position = endTransform.position;
@@ -161,7 +161,7 @@ public class MagazineBehaviour : CustomLinearDrive
         
         gunBehaviour = null;
         
-        linearMapping.value = 0;
+        LinearMapping.value = 0;
         UpdateHandPoser();
     }
 
@@ -211,7 +211,7 @@ public class MagazineBehaviour : CustomLinearDrive
             UpdateHandPoser();
         }
         
-        if (linearMapping.value == 1)
+        if (LinearMapping.value == 1)
         {
             AttachToGun();
         }
@@ -219,7 +219,7 @@ public class MagazineBehaviour : CustomLinearDrive
 
     private void UpdateHandPoser()
     {
-        grabbableObject.throwable.interactable.skeletonPoser.SetBlendingBehaviourValue("Pushing", linearMapping.value);
+        grabbableObject.throwable.interactable.skeletonPoser.SetBlendingBehaviourValue("Pushing", LinearMapping.value);
     }
 
     private IEnumerator EjectAnimation()
