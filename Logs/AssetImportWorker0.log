@@ -1,0 +1,265 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.20f1 (577897200b8b) revision 5732503'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'pt' Physical Memory: 16297 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Projects/WeaponReload
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53926
+Successfully changed project path to: D:/Projects/WeaponReload
+D:/Projects/WeaponReload
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [20912] Host "[IP] 192.168.15.11 [Port] 0 [Flags] 2 [Guid] 2345357146 [EditorId] 2345357146 [Version] 1048832 [Id] WindowsEditor(7,Renan) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [20912] Host "[IP] 192.168.15.11 [Port] 0 [Flags] 2 [Guid] 2345357146 [EditorId] 2345357146 [Version] 1048832 [Id] WindowsEditor(7,Renan) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 58.44 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.78 ms.
+Initialize engine version: 2021.3.20f1 (577897200b8b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projects/WeaponReload/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5969 MB
+    Driver:   31.0.15.4617
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006486 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 365 ms
+Refreshing native plugins compatible for Editor in 35.45 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.116 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1117ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (870ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (150ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (632ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (445ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (36ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (100ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005108 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 38.29 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Package Manager log level set to [2]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in D:\Projects\WeaponReload\Library\PackageCache\com.unity.xr.oculus@3.2.3\Runtime\OculusLoader.cs:296 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Projects\WeaponReload\Library\PackageCache\com.unity.xr.oculus@3.2.3\Runtime\OculusLoader.cs:281 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <88e4733ac7bc4ae1b496735e6b83bbd3>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <6e08e61cfda04255b3972ba7f0515fae>:0 
+0x00007ff7535ebe5d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7535f2a19 (Unity) StackWalker::ShowCallstack
+0x00007ff754579d93 (Unity) GetStacktrace
+0x00007ff754c2869d (Unity) DebugStringToFile
+0x00007ff75274c1f2 (Unity) DebugLogHandler_CUSTOM_Internal_Log
+0x0000019a5485b383 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+0x0000019a5485936b (Mono JIT Code) UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+0x0000019a54851380 (Mono JIT Code) UnityEngine.Logger:Log (UnityEngine.LogType,object)
+0x0000019a54851245 (Mono JIT Code) UnityEngine.Debug:LogError (object)
+0x0000019a54826033 (Mono JIT Code) UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+0x0000019a505b2cdd (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void (object,intptr,intptr,intptr)
+0x00007ffb0500feb4 (mono-2.0-bdwgc) [mini-runtime.c:3445] mono_jit_runtime_invoke 
+0x00007ffb04f4e764 (mono-2.0-bdwgc) [object.c:3066] do_runtime_invoke 
+0x00007ffb04f4e8fc (mono-2.0-bdwgc) [object.c:3113] mono_runtime_invoke 
+0x00007ff7535107f4 (Unity) scripting_method_invoke
+0x00007ff7534efff4 (Unity) ScriptingInvocation::Invoke
+0x00007ff7534eabf5 (Unity) ScriptingInvocation::Invoke<void>
+0x00007ff75362d30b (Unity) Scripting::UnityEditor::EditorAssembliesProxy::ProcessInitializeOnLoadMethodAttributes
+0x00007ff7534e4e63 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7534da92d (Unity) MonoManager::EndReloadAssembly
+0x00007ff7534e24b8 (Unity) MonoManager::ReloadAssembly
+0x00007ff754434532 (Unity) LoadDomainAndUserAssemblies
+0x00007ff754434c64 (Unity) LoadUserAssemblies
+0x00007ff75411ebf3 (Unity) Application::InitializeProject
+0x00007ff7545844f8 (Unity) WinMain
+0x00007ff75594d0ee (Unity) __scrt_common_main_seh
+0x00007ffbafe3257d (KERNEL32) BaseThreadInitThunk
+0x00007ffbb1f2aa58 (ntdll) RtlUserThreadStart
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.564 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1566ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (1294ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (909ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (38ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (374ms)
+				ProcessInitializeOnLoadMethodAttributes (410ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 1590 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (353.7 KB). Loaded Objects now: 2048.
+Memory consumption went from 85.3 MB to 85.0 MB.
+Total: 4.300600 ms (FindLiveObjects: 0.316000 ms CreateObjectMapping: 0.092000 ms MarkObjects: 3.714700 ms  DeleteObjects: 0.176600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5727.476001 seconds.
+  path: Assets/Game/Scenario/AlvoColorido/Prefabs/Alvo4x4.prefab
+  artifactKey: Guid(f2280b40fa0ce5c46af9d609a0c4d694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenario/AlvoColorido/Prefabs/Alvo4x4.prefab using Guid(f2280b40fa0ce5c46af9d609a0c4d694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86097c82d80eec0ba2e94e2a05fe98ff') in 0.393192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game/Guns/ammo-9x19mm-parabellum/Prefabs/9mm Bullet Physics.prefab
+  artifactKey: Guid(b93bc1e25e60dd74b975fbf4dc00fc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Guns/ammo-9x19mm-parabellum/Prefabs/9mm Bullet Physics.prefab using Guid(b93bc1e25e60dd74b975fbf4dc00fc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b69b5485fbc1e174a01aadf3d1c9dfdf') in 0.340422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Game/Guns/ammo-9x19mm-parabellum/Prefabs/9mm Cartridge.prefab
+  artifactKey: Guid(3437094ec4c216b4dbd19388a2cc2aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Guns/ammo-9x19mm-parabellum/Prefabs/9mm Cartridge.prefab using Guid(3437094ec4c216b4dbd19388a2cc2aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3972a22457dbfff5fb3d6fb13d277761') in 0.224117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Game/Guns/9mm/Prefabs/9mm.prefab
+  artifactKey: Guid(9499e710bce72bb42a7af29c7429bf9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Guns/9mm/Prefabs/9mm.prefab using Guid(9499e710bce72bb42a7af29c7429bf9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f1e1ea673ee812362b0d8a54400de3') in 0.252468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Game/Scenario/Alvo/Prefabs/AlvoHuman.prefab
+  artifactKey: Guid(a24a96bda163f99409b25c722a42c052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenario/Alvo/Prefabs/AlvoHuman.prefab using Guid(a24a96bda163f99409b25c722a42c052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbaa1f6d8aeade2fcdb21ba16967334b') in 0.215419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Game/Guns/7.62mmx51mm NATO/Prefab/7.62x51 Projectile.prefab
+  artifactKey: Guid(a5e3a21dda3b69243800531ae1b5255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Guns/7.62mmx51mm NATO/Prefab/7.62x51 Projectile.prefab using Guid(a5e3a21dda3b69243800531ae1b5255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '083da719c65378f0498dcecea73ed79e') in 0.255795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/Guns/9mm/Prefabs/BulletHoleThru.prefab
+  artifactKey: Guid(0d104cf87863dd342a19cd06f44e32c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Guns/9mm/Prefabs/BulletHoleThru.prefab using Guid(0d104cf87863dd342a19cd06f44e32c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '018dda5b9dbf7b8bd97c37e49958bb10') in 0.095896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game/Guns/7.62mmx51mm NATO/Prefab/7.62x51 Bullet Model.prefab
+  artifactKey: Guid(d2546fdda4e88744fb94a276c349bdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Guns/7.62mmx51mm NATO/Prefab/7.62x51 Bullet Model.prefab using Guid(d2546fdda4e88744fb94a276c349bdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c457a33bc79dd058a2400cf43564636e') in 0.210914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game/Scenario/AlvoColorido/Prefabs/Alvo4x4 Target.prefab
+  artifactKey: Guid(397fcef6c81a52f48b335989e0429ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenario/AlvoColorido/Prefabs/Alvo4x4 Target.prefab using Guid(397fcef6c81a52f48b335989e0429ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c79edaca813decf954d8706f7af7063') in 0.335389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Game/Guns/Glock17/Prefabs/Glock17 Magazine Visual.prefab
+  artifactKey: Guid(38a050b4be8d6ca4ba820ee68d390fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Guns/Glock17/Prefabs/Glock17 Magazine Visual.prefab using Guid(38a050b4be8d6ca4ba820ee68d390fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7bb48e51f19f215c826642e90793695') in 0.702610 seconds 
