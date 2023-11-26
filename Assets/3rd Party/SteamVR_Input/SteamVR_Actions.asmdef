@@ -1,7 +1,9 @@
 {
   "name": "SteamVR_Actions",
   "references": [
-    "SteamVR"
+    "SteamVR",
+    "UnityEditor.UI",
+    "UnityEngine.UI"
   ],
   "optionalUnityReferences": [],
   "includePlatforms": [],

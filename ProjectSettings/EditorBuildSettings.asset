@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/Foxtrot.unity
     guid: 5190be43bb0c8444c911d7ad81043ac6
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 1c9162925faf1504ea10252fee98b8d0,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 06ac53d3df783d84c86a729c9c0d61fa,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 3e20a2fcb76e023429721669ea442f15,
+      type: 2}

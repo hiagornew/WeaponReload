@@ -75,7 +75,6 @@ public class GrabbableObject : MonoBehaviour
 
             throwable.releaseVelocityStyle = ReleaseStyle.ShortEstimation;
             throwable.interactable.hideHandOnAttach = false;
-            throwable.interactable.hoverAttached = true;
         }
 
         if (!inputManager)
