@@ -2,18 +2,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public abstract class CustomLinearDrive : MonoBehaviour
 {
     [SerializeField]
+    protected LinearMapping linearMapping;
+
     protected Transform hostTransform;
-    
     protected Transform startTransform;
     protected Transform endTransform;
     
     protected float initialMappingOffset;
 
-    protected float LinearMapping;
+    protected virtual void OnValidate()
+    {
+        if (!linearMapping)
+        {
+            linearMapping = GetComponent<LinearMapping>();
+
+            if (!linearMapping)
+            {
+                linearMapping = gameObject.AddComponent<LinearMapping>();
+            }
+        }
+    }
 
     protected virtual void SetProperties(Transform start, Transform end, Transform host = null)
     {
@@ -25,12 +38,12 @@ public abstract class CustomLinearDrive : MonoBehaviour
     
     protected virtual void UpdateLinearMapping(Transform updateTransform)
     {
-        LinearMapping = Mathf.Clamp01(initialMappingOffset + CalculateLinearMapping(updateTransform));
+        linearMapping.value = Mathf.Clamp01(initialMappingOffset + CalculateLinearMapping(updateTransform));
 
         if (hostTransform)
         {
             hostTransform.transform.position =
-                Vector3.Lerp(startTransform.position, endTransform.position, LinearMapping);
+                Vector3.Lerp(startTransform.position, endTransform.position, linearMapping.value);
         }
     }
 
