@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game/Scenes/Foxtrot.unity
+    path: Assets/Foxtrot/Scenes/Foxtrot.unity
     guid: 5190be43bb0c8444c911d7ad81043ac6
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c06a0cd5b5c86f742b8c460ba46b2626,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 2bcf50ca7a335ea40b37e3bcf05eea52,
+      type: 2}

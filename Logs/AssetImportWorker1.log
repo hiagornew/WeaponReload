@@ -1,0 +1,424 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.20f1 (577897200b8b) revision 5732503'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'pt' Physical Memory: 16297 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Projects/WeaponReload
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50418
+Successfully changed project path to: D:/Projects/WeaponReload
+D:/Projects/WeaponReload
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [14376] Host "[IP] 192.168.15.11 [Port] 0 [Flags] 2 [Guid] 1900950212 [EditorId] 1900950212 [Version] 1048832 [Id] WindowsEditor(7,Renan) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [14376] Host "[IP] 192.168.15.11 [Port] 0 [Flags] 2 [Guid] 1900950212 [EditorId] 1900950212 [Version] 1048832 [Id] WindowsEditor(7,Renan) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 93.37 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 2.60 ms.
+Initialize engine version: 2021.3.20f1 (577897200b8b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projects/WeaponReload/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5969 MB
+    Driver:   31.0.15.4629
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005572 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 306 ms
+Refreshing native plugins compatible for Editor in 87.41 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.05 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.013 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1014ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (823ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (123ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (614ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (374ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (100ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005199 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 83.54 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.05 ms.
+Package Manager log level set to [2]
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.89.0
+Mono: successfully reloaded assembly
+- Completed reload, in  1.183 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1184ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (959ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (232ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (103ms)
+			SetupLoadedEditorAssemblies (469ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (235ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.23 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.07 ms.
+Unloading 3882 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 85 unused Assets / (1.6 MB). Loaded Objects now: 4288.
+Memory consumption went from 175.7 MB to 174.1 MB.
+Total: 5.211000 ms (FindLiveObjects: 0.372500 ms CreateObjectMapping: 0.503000 ms MarkObjects: 3.815200 ms  DeleteObjects: 0.519100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 171099.587231 seconds.
+  path: Assets/Prefabs/Player/OVRPlayerController.prefab
+  artifactKey: Guid(fadef9aead0126f41a1a765a3fa6cecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/OVRPlayerController.prefab using Guid(fadef9aead0126f41a1a765a3fa6cecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be8359d925e7b0cc6a7a5c42e6263942') in 0.064983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.359351 seconds.
+  path: Assets/Oculus/VR/Prefabs/OVRControllerPrefab.prefab
+  artifactKey: Guid(d9809c5e8418bb047bf2c8ba1d1a2cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Prefabs/OVRControllerPrefab.prefab using Guid(d9809c5e8418bb047bf2c8ba1d1a2cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9677b9215fee071bd32dca8673cc562e') in 0.445719 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007830 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 119.81 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.07 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.568 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1569ms)
+		BeginReloadAssembly (160ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1290ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (296ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (747ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (120ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (377ms)
+				ProcessInitializeOnLoadMethodAttributes (121ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
+Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
+Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'Universal Render Pipeline/Nature/SpeedTree8': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/FallbackError': fallback shader 'Hidden/Core/FallbackError' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 7.61 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 5450 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 160 unused Assets / (8.1 MB). Loaded Objects now: 5956.
+Memory consumption went from 266.3 MB to 258.3 MB.
+Total: 336.711700 ms (FindLiveObjects: 108.629000 ms CreateObjectMapping: 20.123500 ms MarkObjects: 198.880300 ms  DeleteObjects: 9.076700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 359.390215 seconds.
+  path: Assets/Oculus/VR/Editor/BuildingBlocks/BlockData/CameraRig/Prefabs/OVRCameraRig.prefab
+  artifactKey: Guid(4b650a383c3760f449b65ff48bccdd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Editor/BuildingBlocks/BlockData/CameraRig/Prefabs/OVRCameraRig.prefab using Guid(4b650a383c3760f449b65ff48bccdd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b815d6fff745e2f77a2cafa9ae075dda') in 0.042911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.304540 seconds.
+  path: Assets/Oculus/VR/Prefabs/OVRControllerPrefab.prefab
+  artifactKey: Guid(d9809c5e8418bb047bf2c8ba1d1a2cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Prefabs/OVRControllerPrefab.prefab using Guid(d9809c5e8418bb047bf2c8ba1d1a2cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8272293593a6ece159080c9d2e3e8b9e') in 0.455579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.311736 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/ControllerBox.FBX
+  artifactKey: Guid(6ea491f82329b774d8b8af4a409d8d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/ControllerBox.FBX using Guid(6ea491f82329b774d8b8af4a409d8d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f0a76748166427234cc70bb1c0fdc6') in 0.311773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Foxtrot/Guns/ammo-9x19mm-parabellum/Art/Models/9mm.fbx
+  artifactKey: Guid(d6b7172427ebea04fb643125d9de0673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Guns/ammo-9x19mm-parabellum/Art/Models/9mm.fbx using Guid(d6b7172427ebea04fb643125d9de0673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7990a21c1c9ef37cad51ce35f548bb0e') in 0.220151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Foxtrot/Guns/7.62mmx51mm NATO/Art/Materials/7_62mm x 51mm.mat
+  artifactKey: Guid(0df7ab33527086e46a166c71d348da71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Guns/7.62mmx51mm NATO/Art/Materials/7_62mm x 51mm.mat using Guid(0df7ab33527086e46a166c71d348da71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a942c2163c1ca562b46846f8d4064c9') in 0.105020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/3rd Party/HologramShader/Demo/Materials/_Hologram_Rim_Flicker_Blue.mat
+  artifactKey: Guid(a9d8565cd2f99b04c94288f457b17456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3rd Party/HologramShader/Demo/Materials/_Hologram_Rim_Flicker_Blue.mat using Guid(a9d8565cd2f99b04c94288f457b17456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d0f9e8fab0e594a4c5a089796f0dc3') in 0.076832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Foxtrot/Scenario/Alvo/Materials/Alvo_Mat.mat
+  artifactKey: Guid(410679e28289b0a4795fe32f7655bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/Alvo/Materials/Alvo_Mat.mat using Guid(410679e28289b0a4795fe32f7655bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7cdc0bfaa02e97be9865a3792681e3') in 0.126778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Foxtrot/Scenario/AlvoColorido/Materials/AlvoColorido_Mat.mat
+  artifactKey: Guid(a03e57cd04bb3df4a990f7955f11cf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/AlvoColorido/Materials/AlvoColorido_Mat.mat using Guid(a03e57cd04bb3df4a990f7955f11cf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f068288a0bba532a2361cb0c75d88e52') in 0.073397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/3rd Party/HologramShader/Demo/Materials/_Hologram_Rim_Red.mat
+  artifactKey: Guid(2a2859baeeec7e14785299ea50011ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3rd Party/HologramShader/Demo/Materials/_Hologram_Rim_Red.mat using Guid(2a2859baeeec7e14785299ea50011ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74c8462b7cee2859c3b9870025a61e5') in 0.019339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Foxtrot/Scenario/Ambient/Materials/Ambient.mat
+  artifactKey: Guid(4404bca4560e652408c1f650e357779e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/Ambient/Materials/Ambient.mat using Guid(4404bca4560e652408c1f650e357779e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ba371229af723e7e0e87b187d0d5e1') in 0.048780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Foxtrot/Scenario/AlvoPreto/Models/AlvoPreto_FBX.fbx
+  artifactKey: Guid(d5e42b7babb449a45a1119feca23172e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/AlvoPreto/Models/AlvoPreto_FBX.fbx using Guid(d5e42b7babb449a45a1119feca23172e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034349ff94fa7f7b8bde950d3b979be1') in 0.031454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Foxtrot/Scenario/Abafador/Models/Abafador_FBX.fbx
+  artifactKey: Guid(09429f0c848f2e2498b2ff2df9b4fb4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/Abafador/Models/Abafador_FBX.fbx using Guid(09429f0c848f2e2498b2ff2df9b4fb4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d997332c61a7c98c511157d128ef9ee') in 0.115841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Foxtrot/Scenario/AlvoPreto/Materials/AlvoPreto_Mat.mat
+  artifactKey: Guid(1efe468b887de2a44bcd20b9800cec3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/AlvoPreto/Materials/AlvoPreto_Mat.mat using Guid(1efe468b887de2a44bcd20b9800cec3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38062ff508710b1b3ae47cd3c159e9f6') in 0.069855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Foxtrot/Scenario/Abafador/Materials/Abafador.mat
+  artifactKey: Guid(e045af00a4a02134ca72abf44854fbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/Abafador/Materials/Abafador.mat using Guid(e045af00a4a02134ca72abf44854fbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f411297f3abe3a8e7c6f412ce7de2a') in 0.067816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Foxtrot/Scenario/Alvo/Models/Alvo_FBX.fbx
+  artifactKey: Guid(cee445a77f697fa4887f1cf3b5ad2a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/Alvo/Models/Alvo_FBX.fbx using Guid(cee445a77f697fa4887f1cf3b5ad2a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b58037d573782f69dd394f9ca0b0db3') in 0.026117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/3rd Party/HologramShader/Demo/Materials/_Hologram_Rim_Flicker_Green.mat
+  artifactKey: Guid(d0af7ad49d9e0d54cb487c1c81501239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3rd Party/HologramShader/Demo/Materials/_Hologram_Rim_Flicker_Green.mat using Guid(d0af7ad49d9e0d54cb487c1c81501239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a99392376bb90e50325cbdd9aaf6312') in 0.063984 seconds 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 13.16 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.24 ms.
+Unloading 208 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 131 unused Assets / (5.8 MB). Loaded Objects now: 6071.
+Memory consumption went from 160.7 MB to 154.9 MB.
+Total: 7.972700 ms (FindLiveObjects: 0.635000 ms CreateObjectMapping: 0.445600 ms MarkObjects: 4.301800 ms  DeleteObjects: 2.589100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 62.717475 seconds.
+  path: Assets/Foxtrot/Guns/ammo-9x19mm-parabellum/Art/Models/9mm.fbx
+  artifactKey: Guid(d6b7172427ebea04fb643125d9de0673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Guns/ammo-9x19mm-parabellum/Art/Models/9mm.fbx using Guid(d6b7172427ebea04fb643125d9de0673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad4e2bbd04a0c64d5fea279458315fc') in 1.964554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/3rd Party/HologramShader/Demo/Materials/_Hologram_Rim_Flicker_Blue.mat
+  artifactKey: Guid(a9d8565cd2f99b04c94288f457b17456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3rd Party/HologramShader/Demo/Materials/_Hologram_Rim_Flicker_Blue.mat using Guid(a9d8565cd2f99b04c94288f457b17456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b80b675b121eeb4805fccdcbba8c28c') in 0.016089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Foxtrot/Scenario/Ambient/Materials/Ambient.mat
+  artifactKey: Guid(4404bca4560e652408c1f650e357779e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/Ambient/Materials/Ambient.mat using Guid(4404bca4560e652408c1f650e357779e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b508740077f669474073fecc2ee4883') in 0.029509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Foxtrot/Scenario/AlvoPreto/Models/AlvoPreto_FBX.fbx
+  artifactKey: Guid(d5e42b7babb449a45a1119feca23172e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/AlvoPreto/Models/AlvoPreto_FBX.fbx using Guid(d5e42b7babb449a45a1119feca23172e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c46f8a6bc3a3369c4738a90415ed83') in 0.045037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Foxtrot/Scenario/Abafador/Materials/Abafador.mat
+  artifactKey: Guid(e045af00a4a02134ca72abf44854fbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/Abafador/Materials/Abafador.mat using Guid(e045af00a4a02134ca72abf44854fbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9839b777a96850f94689d2c6d801d5d9') in 1.546352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Foxtrot/Guns/7.62mmx51mm NATO/Art/Models/7_62mm x 51mm.fbx
+  artifactKey: Guid(754eddbc21b4e714eb32ef6c1d58aa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Guns/7.62mmx51mm NATO/Art/Models/7_62mm x 51mm.fbx using Guid(754eddbc21b4e714eb32ef6c1d58aa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec1fda2b607ce4b4bdf70a1ecc812421') in 0.092040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Foxtrot/Scenario/AlvoColorido/Models/Alvo_FBX.fbx
+  artifactKey: Guid(f62794c8040f02d4791418f29859693d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Foxtrot/Scenario/AlvoColorido/Models/Alvo_FBX.fbx using Guid(f62794c8040f02d4791418f29859693d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39dc5365c30e989551a3d711274bf0f5') in 0.038800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/ControllerBox.FBX
+  artifactKey: Guid(6ea491f82329b774d8b8af4a409d8d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/ControllerBox.FBX using Guid(6ea491f82329b774d8b8af4a409d8d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf0d4cd6a1a56be5ed724be507a66bc') in 0.252260 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

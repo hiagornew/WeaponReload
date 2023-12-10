@@ -1,0 +1,22 @@
+{
+    "name": "Meta.VoiceSDK.Mic.WebGL",
+    "rootNamespace": "",
+    "references": [
+        "GUID:92a2c14febc027049bf15fe8da646123",
+        "GUID:1c28d8b71ced07540b7c271537363cc6",
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "WebGL"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
