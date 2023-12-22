@@ -81,8 +81,8 @@ namespace Foxtrot.Shared.Scripts
             public void HandleInputAction(InputAction inputAction)
             {
                 _downState = inputAction.WasPressedThisFrame();
-                _holdState = inputAction.WasReleasedThisFrame();
-                _upState = inputAction.IsPressed();
+                _holdState = inputAction.IsPressed();
+                _upState = inputAction.WasReleasedThisFrame();
             }
         }
 
