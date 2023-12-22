@@ -101,14 +101,14 @@ namespace Foxtrot.Shared.Scripts
 
         private void Start()
         {
-            StartInputAction(_leftGrabInput, Hand.GrabTypes.Grip, Hand.HandType.LeftHand);
-            StartInputAction(_rightGrabInput, Hand.GrabTypes.Grip, Hand.HandType.RightHand);
+            _leftGrabInput = StartInputAction(_leftGrabInput, Hand.GrabTypes.Grip, Hand.HandType.LeftHand);
+            _rightGrabInput = StartInputAction(_rightGrabInput, Hand.GrabTypes.Grip, Hand.HandType.RightHand);
             
-            StartInputAction(_leftTriggerInput, Hand.GrabTypes.Trigger, Hand.HandType.LeftHand);
-            StartInputAction(_rightTriggerInput, Hand.GrabTypes.Trigger, Hand.HandType.RightHand);
+            _leftTriggerInput = StartInputAction(_leftTriggerInput, Hand.GrabTypes.Trigger, Hand.HandType.LeftHand);
+            _rightTriggerInput = StartInputAction(_rightTriggerInput, Hand.GrabTypes.Trigger, Hand.HandType.RightHand);
             
-            StartInputAction(_leftPrimaryInput, Hand.GrabTypes.Primary, Hand.HandType.LeftHand);
-            StartInputAction(_rightPrimaryInput, Hand.GrabTypes.Primary, Hand.HandType.RightHand);
+            _leftPrimaryInput = StartInputAction(_leftPrimaryInput, Hand.GrabTypes.Primary, Hand.HandType.LeftHand);
+            _rightPrimaryInput = StartInputAction(_rightPrimaryInput, Hand.GrabTypes.Primary, Hand.HandType.RightHand);
         }
         
         private void Update()
@@ -149,7 +149,7 @@ namespace Foxtrot.Shared.Scripts
             }
         }
 
-        private void StartInputAction(Input input, Hand.GrabTypes grabTypes, Hand.HandType handType)
+        private Input StartInputAction(Input input, Hand.GrabTypes grabTypes, Hand.HandType handType)
         {
             input = new Input();
             
@@ -168,15 +168,20 @@ namespace Foxtrot.Shared.Scripts
                 Hand.GrabTypes.Grip => "Grab",
                 Hand.GrabTypes.Trigger => "Trigger",
                 Hand.GrabTypes.Primary => "Primary",
+                Hand.GrabTypes.Secondary => "Secondary",
                 _ => inputActionName
             };
 
             var inputAction = inputActions.FindActionMap(actionMapName).FindAction(inputActionName);
+            
+            Debug.Log($"[Test] StartInputAction ActionMapName: {actionMapName} InputActionName: {inputActionName} InputAction: {inputAction.name}");
 
             inputAction.performed += ctx => input.HandleInputAction(ctx.action);
             inputAction.canceled += ctx => input.HandleInputAction(ctx.action);
             
             inputAction.Enable();
+
+            return input;
         }
         
         public void PauseHand(Hand hand, Hand.GrabTypes grabType)

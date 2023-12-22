@@ -779,15 +779,9 @@ namespace Foxtrot.GrabSystem.Scripts
 
         public GrabTypes GetGrabStarting(GrabTypes explicitType = GrabTypes.None)
         {
-            if (explicitType != GrabTypes.None)
+            if (explicitType == GrabTypes.Grip && InputManager.instance.GetInput(handType, GrabTypes.Grip).DownState)
             {
-                if (explicitType == GrabTypes.Grip && InputManager.instance.GetInput(handType, GrabTypes.Grip).DownState)
-                    return GrabTypes.Grip;
-            }
-            else
-            {
-                if (InputManager.instance.GetInput(handType, GrabTypes.Grip).DownState)
-                    return GrabTypes.Grip;
+                return GrabTypes.Grip;
             }
 
             return GrabTypes.None;
@@ -795,15 +789,9 @@ namespace Foxtrot.GrabSystem.Scripts
 
         public GrabTypes GetGrabEnding(GrabTypes explicitType = GrabTypes.None)
         {
-            if (explicitType != GrabTypes.None)
+            if (explicitType == GrabTypes.Grip && InputManager.instance.GetInput(handType, GrabTypes.Grip).UpState)
             {
-                if (explicitType == GrabTypes.Grip && InputManager.instance.GetInput(handType, GrabTypes.Grip).UpState)
-                    return GrabTypes.Grip;
-            }
-            else
-            {
-                if (InputManager.instance.GetInput(handType, GrabTypes.Grip).UpState)
-                    return GrabTypes.Grip;
+                return GrabTypes.Grip;
             }
 
             return GrabTypes.None;
@@ -838,12 +826,13 @@ namespace Foxtrot.GrabSystem.Scripts
         {
             if (preferred == GrabTypes.Grip)
             {
+                Debug.Log($"[Test] GetBestGrabbingType InputManager: {InputManager.instance != null} HandType: {handType}");
+
                 if (InputManager.instance.GetInput(handType, GrabTypes.Grip).HoldState)
+                {
                     return GrabTypes.Grip;
+                }
             }
-            
-            if (InputManager.instance.GetInput(handType, GrabTypes.Grip).HoldState)
-                return GrabTypes.Grip;
 
             return GrabTypes.None;
         }
