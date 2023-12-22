@@ -17,8 +17,7 @@ namespace Foxtrot.GrabSystem.Scripts
         [SerializeField] private float scanSize;
         [SerializeField] private LayerMask grabbableLayers;
 
-        [ReadOnly] public Hand hand;
-        public HandPulseController handPulseController;
+        public Hand hand;
 
         [Foldout("Prefabs", true)] [SerializeField]
         private GameObject scanPrefab;
@@ -31,6 +30,7 @@ namespace Foxtrot.GrabSystem.Scripts
         [SerializeField, ReadOnly] private GameObject instantiatedScan;
         [SerializeField, ReadOnly] private GameObject instantiatedIcon;
         [ReadOnly] public GrabingStep grabingStep;
+        
         private Transform lastIconTransform;
         private Coroutine grabbingAnimation;
 

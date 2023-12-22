@@ -11,12 +11,12 @@ namespace Foxtrot.Shared.Scripts
     {
         public static InputManager instance { get; private set; }
         
-        [Foldout("GrabBehaviours", true)]
-        [SerializeField, ReadOnly]
+        [Foldout("References", true)]
+        [SerializeField]
+        private InputActionAsset inputActions;
+        [SerializeField]
         private GrabBehaviour[] grabBehaviours;
         
-        public InputActionAsset inputActions;
-
         private Input _leftGrabInput;
         private Input _rightGrabInput;
 
@@ -88,15 +88,7 @@ namespace Foxtrot.Shared.Scripts
 
         private void Awake()
         {
-            if (instance == null)
-            {
-                instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
+            instance = this;
         }
 
         private void Start()

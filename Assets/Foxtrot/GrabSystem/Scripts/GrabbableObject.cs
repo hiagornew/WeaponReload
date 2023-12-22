@@ -33,7 +33,7 @@ namespace Foxtrot.GrabSystem.Scripts
         [ReadOnly]
         public GrabbableHoldPoint secondHandHoldPoint;
         [ReadOnly]
-        public List<Hand> holdingHands = new List<Hand>();
+        public List<Hand> holdingHands = new();
 
         protected InputManager InputManager;
         

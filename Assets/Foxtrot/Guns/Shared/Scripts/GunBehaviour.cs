@@ -228,12 +228,12 @@ namespace Foxtrot.Guns.Shared.Scripts
         {
             transform.Rotate(recoilVector, recoilForce, Space.Self);
 
-            var grabArray = grabbableObject.GetActiveGrabBehaviours();
-
-            for (var i = 0; i < grabArray.Length; i++)
-            {
-                grabArray[i].handPulseController.BeginPulseLoop(0.2f);
-            }
+            // var grabArray = grabbableObject.GetActiveGrabBehaviours();
+            //
+            // for (var i = 0; i < grabArray.Length; i++)
+            // {
+            //     grabArray[i].handPulseController.BeginPulseLoop(0.2f);
+            // }
         }
 
         protected virtual bool CheckRPM()

@@ -5056,7 +5056,7 @@ PrefabInstance:
         type: 3}
       propertyPath: inputManager
       value: 
-      objectReference: {fileID: 1286680526}
+      objectReference: {fileID: 0}
     - target: {fileID: 3966748339773514883, guid: b72bc55bd28b6a344b9815ceebc26ba3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16756,7 +16756,7 @@ PrefabInstance:
     - target: {fileID: 779130085, guid: baa0dcf403661b444b00b15045a9cdf3, type: 3}
       propertyPath: inputManager
       value: 
-      objectReference: {fileID: 1286680526}
+      objectReference: {fileID: 0}
     - target: {fileID: 1961580846, guid: baa0dcf403661b444b00b15045a9cdf3, type: 3}
       propertyPath: m_Tangents.Array.data[18].x
       value: NaN
@@ -17036,7 +17036,7 @@ PrefabInstance:
     - target: {fileID: 1971496117, guid: baa0dcf403661b444b00b15045a9cdf3, type: 3}
       propertyPath: inputManager
       value: 
-      objectReference: {fileID: 1286680526}
+      objectReference: {fileID: 0}
     - target: {fileID: 1971496117, guid: baa0dcf403661b444b00b15045a9cdf3, type: 3}
       propertyPath: physicsColliders.Array.size
       value: 6
@@ -17075,7 +17075,7 @@ PrefabInstance:
         type: 3}
       propertyPath: inputManager
       value: 
-      objectReference: {fileID: 1286680526}
+      objectReference: {fileID: 0}
     - target: {fileID: 1591888635988616682, guid: baa0dcf403661b444b00b15045a9cdf3,
         type: 3}
       propertyPath: m_Tangents.Array.data[243].x
@@ -20155,7 +20155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1286680527}
-  - component: {fileID: 1286680526}
+  - component: {fileID: 1286680528}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
@@ -20163,35 +20163,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1286680526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286680525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d94c2878598ef74c8de8826309d1cc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabBehaviours:
-  - {fileID: 0}
-  - {fileID: 0}
-  grabGrabType: 3
-  grabPressing:
-    actionPath: /actions/default/in/GrabGrip
-    needsReinit: 0
-  fireGrabType: 2
-  firePressing:
-    actionPath: /actions/default/in/GrabPinch
-    needsReinit: 0
-  dPadCenterPressing:
-    actionPath: /actions/default/in/DPadCenter
-    needsReinit: 0
-  trackPadPosition:
-    actionPath: /actions/default/in/TrackPadPosition
-    needsReinit: 0
 --- !u!4 &1286680527
 Transform:
   m_ObjectHideFlags: 0
@@ -20207,6 +20178,23 @@ Transform:
   m_Father: {fileID: 2070634413}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1286680528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286680525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f67c82bdcd9e14ea92ffa9589d44ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActions: {fileID: -944628639613478452, guid: e9f55af4ff51a83418d4e1316e82bead,
+    type: 3}
+  grabBehaviours:
+  - {fileID: 1472764695}
+  - {fileID: 1576490652}
 --- !u!1 &1293591706
 GameObject:
   m_ObjectHideFlags: 0
@@ -21582,6 +21570,65 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5461929046604585225}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1472764693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472764694}
+  - component: {fileID: 1472764695}
+  m_Layer: 0
+  m_Name: GrabBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1472764694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472764693}
+  m_LocalRotation: {x: 0.3464252, y: 0.5191111, z: 0.2420654, w: 0.7429116}
+  m_LocalPosition: {x: -0.00000004842877, y: -0.005900033, z: -0.1161}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1648084905}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 15.27244, y: 76.75486, z: 48.21638}
+--- !u!114 &1472764695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472764693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2d6e43a13b01b479b503e407589ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showLaser: 1
+  distance: 50
+  scanSize: 0.3
+  grabbableLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  hand: {fileID: 1648084909}
+  scanPrefab: {fileID: 838277825986073894, guid: 3ec74bcf5e12f1b4091a9137cb442dca,
+    type: 3}
+  iconPrefab: {fileID: 4699140991830974408, guid: bdb33ffdfbe59644c9c60af2513fbf8a,
+    type: 3}
+  currentGrabbedObject: {fileID: 0}
+  instantiatedScan: {fileID: 0}
+  instantiatedIcon: {fileID: 0}
+  grabingStep: 0
 --- !u!1001 &1474505991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22789,53 +22836,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.31695923, z: 0.045492098}
   m_Center: {x: 0.00000011920929, y: -0.000000074505806, z: 0.00000004749745}
---- !u!1 &1571764945
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1571764947}
-  - component: {fileID: 1571764946}
-  m_Layer: 0
-  m_Name: InputManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1571764946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1571764945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60f67c82bdcd9e14ea92ffa9589d44ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabBehaviours: []
-  inputActions: {fileID: -944628639613478452, guid: e9f55af4ff51a83418d4e1316e82bead,
-    type: 3}
---- !u!4 &1571764947
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1571764945}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.877521, y: 6.2033043, z: -7.2879524}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1575917416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22924,6 +22924,65 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.31695923, z: 0.045492098}
   m_Center: {x: 0.00000011920929, y: -0.000000074505806, z: 0.00000046472996}
+--- !u!1 &1576490650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1576490651}
+  - component: {fileID: 1576490652}
+  m_Layer: 0
+  m_Name: GrabBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1576490651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576490650}
+  m_LocalRotation: {x: 0.33700213, y: -0.54689544, z: -0.25502208, w: 0.7227024}
+  m_LocalPosition: {x: -0.00000004842877, y: -0.005900033, z: -0.1161}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1648084904}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 12.01476, y: 280.2872, z: 311.0854}
+--- !u!114 &1576490652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576490650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2d6e43a13b01b479b503e407589ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showLaser: 1
+  distance: 50
+  scanSize: 0.3
+  grabbableLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  hand: {fileID: 1648084908}
+  scanPrefab: {fileID: 838277825986073894, guid: 3ec74bcf5e12f1b4091a9137cb442dca,
+    type: 3}
+  iconPrefab: {fileID: 4699140991830974408, guid: bdb33ffdfbe59644c9c60af2513fbf8a,
+    type: 3}
+  currentGrabbedObject: {fileID: 0}
+  instantiatedScan: {fileID: 0}
+  instantiatedIcon: {fileID: 0}
+  grabingStep: 0
 --- !u!1 &1587135392
 GameObject:
   m_ObjectHideFlags: 0
@@ -25469,7 +25528,7 @@ PrefabInstance:
         type: 3}
       propertyPath: inputManager
       value: 
-      objectReference: {fileID: 1286680526}
+      objectReference: {fileID: 0}
     - target: {fileID: 3966748339773514884, guid: b72bc55bd28b6a344b9815ceebc26ba3,
         type: 3}
       propertyPath: m_Mesh
